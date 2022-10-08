@@ -136,7 +136,7 @@ export function parseSkyBlockProfiles(player: PlayerStats, profiles: AxiosRespon
  * @param minifiedUuid The minified UUID for the player
  */
 function isValidProfile(profileMembers: SkyBlockProfileMembersResponse, minifiedUuid: string) {
-  return profileMembers.hasOwnProperty(minifiedUuid) && profileMembers[minifiedUuid].last_save != undefined
+  return profileMembers.hasOwnProperty(minifiedUuid) && profileMembers[minifiedUuid].first_join != undefined
 }
 
 /**
