@@ -11,6 +11,7 @@ export default asyncWrap(async (request: Request, response: Response) => {
   const profilesResponse = await preformGetRequest(response, `/skyblock/profiles?key=${request.authToken}&uuid=${uuid}`)
   const profiles: SkyBlockProfileStats[] = parseSkyBlockProfiles(player, profilesResponse, uuid)
 
+
   let profile: SkyBlockProfileStats | undefined
   switch (request.params.strategy) {
     case 'we':

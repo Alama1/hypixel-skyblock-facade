@@ -8,6 +8,8 @@ export default interface SkyBlockProfile {
 
   fairy_souls_collected: number
 
+  leveling: object
+
   experience_skill_mining?: number
   experience_skill_foraging?: number
   experience_skill_enchanting?: number

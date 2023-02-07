@@ -11,6 +11,7 @@ export default interface SkyBlockProfilePlayerStats {
   weight: number
   weight_overflow: number
   fairy_souls: number
+  leveling: object
   skills: SkyBlockSkillGroupResponse | null
   slayers: SkyBlockSlayerGroupResponse | null
   dungeons: SkyBlockDungeonGroupResponse | null
